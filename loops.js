@@ -1,6 +1,6 @@
 function forLoop(array)
 {
-  for (i = 0; i < 24; i++)
+  for (i = 1; i < 25; i++)
   {
     if(i == 1)
     {
@@ -23,14 +23,16 @@ function whileLoop(number){
 }
 
 function doWhileLoop(array)
-function maybeTrue()
 {
-  return Math.random() >= 0.5
+  function incrementVariable()
+  {
+    i = i + 1;
+  }
+  do 
+  {
+    array.pop();
+  }
+  while (array.length > 0 && incrementVariable());
+  return array;
 }
-do {
-  array.pop();
-}
-while (array.length > 0 && maybeTrue())
-    return array;
 
-}
