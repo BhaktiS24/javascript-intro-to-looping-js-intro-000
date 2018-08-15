@@ -11,7 +11,7 @@ function forLoop(array)
     }
 
   }
-return array;  
+return array;
 }
 
 function whileLoop(number){
@@ -32,6 +32,5 @@ do {
 }
 while (array.length > 0 && maybeTrue())
     return array;
-    
-}
 
+}
